@@ -5,12 +5,12 @@ import { GiLargeDress } from 'react-icons/gi'
 
 const navbar = () => {
   return (
-    <header className="flex justify-between flex-center">
+    <header className="flex justify-between flex-center w-full">
       <div className="logo">
         <GiLargeDress size={52} />
       </div>
-      <nav>
-        <ul className="flex gap-5">
+      <nav className='hidden sm:block'>
+        <ul className="flex gap-5 ">
           <li>
             <Link href="/shop">Shop</Link>
           </li>
@@ -27,14 +27,14 @@ const navbar = () => {
         </ul>
       </nav>
       <div className="flex">
-        <div class="max-w-md mx-auto">
-          <div class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden">
-            <div class="grid place-items-center h-full w-12 text-gray-300">
+        <div className="max-w-md mx-auto">
+          <div className="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-gray-100 overflow-hidden">
+            <div className="grid place-items-center h-full w-12 text-gray-400">
               <CiSearch size={20} />
             </div>
 
             <input
-              class="peer h-full w-full outline-none text-sm text-gray-700 pr-2"
+              className="peer h-full w-full outline-none text-sm text-gray-700 bg-gray-100 pr-2"
               type="text"
               id="search"
               placeholder="Search something.."
