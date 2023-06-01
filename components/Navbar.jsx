@@ -9,8 +9,8 @@ const navbar = () => {
       <div className="logo">
         <GiLargeDress size={52} />
       </div>
-      <nav className='hidden sm:block'>
-        <ul className="flex gap-5 ">
+      <nav className='hidden sm:flex sm:items-center'>
+        <ul className="flex gap-5">
           <li>
             <Link href="/shop">Shop</Link>
           </li>
